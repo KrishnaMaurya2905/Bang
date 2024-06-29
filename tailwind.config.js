@@ -9,9 +9,8 @@ export default {
     extend: {
       fontFamily: {
         primary: ["ProximaNova"],
-        Secondary:["GTWALSHEIM"],
+        Secondary:["Kano"],
         Decorative:["Melodrama"],
-        And:["Sans"]
       },
       colors: {
         Primary: "#000",
