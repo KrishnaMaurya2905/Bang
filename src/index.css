@@ -8,13 +8,13 @@
 }
 
 @font-face {
-  font-family: "Meseosans";
-  src: url("/src\assets\Fonts\museosanscyrl-500.ttf") format("truetype");
+  font-family: "Kano";
+  src: url("/src/assets/Fonts/Kano.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "GTWALSHEIM";
-  src: url("/src\assets\Fonts\GTWALSHEIM.ttf") format("truetype");
+  font-family: "Intro";
+  src: url("src/assets/Fonts/Dense-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Sans";
@@ -27,6 +27,10 @@
 @font-face {
   font-family: "satoshi";
   src: url("/src/assets/Fonts/Satoshi-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Landing";
+  src: url("/src/assets/Fonts/Shinkosans.ttf") format("truetype");
 }
 
 
@@ -58,21 +62,32 @@ canvas {
 ::-webkit-scrollbar {
   display: none;
 }
-
-@keyframes fadeIn {
+@keyframes expand-left {
   from {
-    opacity: 0;
-    transform: translateY(50px);
+    width: 0;
+    left: 50%;
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    width: 48%;
+    left: 2%;
   }
 }
-/* [data-scroll-container] {
-  will-change: transform;
+
+@keyframes expand-right {
+  from {
+    width: 0;
+    right: 50%;
+  }
+  to {
+    width: 48%;
+    right: 2%;
+  }
 }
 
-.fade-in {
-  animation: fadeIn 1.5s ease-out forwards;
-} */
+.animate-expand-left {
+  animation: expand-left .8s ease-out forwards 0.3s;
+}
+
+.animate-expand-right {
+  animation: expand-right .8s ease-out forwards 0.3s;
+}
