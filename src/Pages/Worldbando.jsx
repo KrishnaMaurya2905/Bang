@@ -143,7 +143,6 @@ const WorldofBandO = () => {
       });
     };
 
-    // Wait for all images to be fully loaded before initializing GSAP animations
     const images = document.querySelectorAll(".col1 img");
     let loadedCount = 0;
     images.forEach((img) => {
