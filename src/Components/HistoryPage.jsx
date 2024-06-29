@@ -57,7 +57,7 @@ const HistoryPage = () => {
         textSize={"text-[3rem] max-sm:text-[10vw]"}
         className={"pt-10 font-Secondary"}
       />
-        <BorderAnimation/>
+      <BorderAnimation/>
       <div className="w-full h-fit gap-[10vh] max-sm:gap-10 sm:mt-[10vh] flex flex-col px-10 max-xl:px-5">
         {History.map((item, index) => (
           <div
