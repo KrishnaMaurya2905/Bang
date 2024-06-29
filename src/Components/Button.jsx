@@ -53,7 +53,7 @@ const Button = ({
         }}
         {...attributes}
       >
-        <p className={`font-primary max-sm:text-sm uppercase ${p} transition-all duration-200 delay-100`}>
+        <p className={`font-primary max-sm:text-xs max-md:text-sm uppercase ${p} transition-all duration-200 delay-100`}>
           {text}
         </p>
         <div

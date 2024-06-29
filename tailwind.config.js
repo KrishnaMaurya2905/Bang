@@ -23,7 +23,7 @@ export default {
         'inherit': 'inherit',
       },
       screens: {
-        'xs': '400px', 
+        'xs': '420px', 
       },
     },
   },

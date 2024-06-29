@@ -26,10 +26,10 @@ const ShopLanding = ({ ShopLandingdata }) => {
                 <br />
                 {titleParts.slice(1).join(" ")}
               </h1>
-              <h2 className="text-white font-Secondary w-[60%] tracking-tight leading-5  max-md:text-sm max-sm:w-full">
+              <h2 className="text-white font-Secondary w-[45%] tracking-tight leading-5  max-md:text-sm max-sm:w-full">
                 {ShopLandingdata.Para}
               </h2>
-              <Button text={"Explore More"} p={"group-hover:text-black"} circ={"bg-white"} customclass={`w-fit bg-[#ffffff3a] md:text-xs md:px-5 max-md:text-xs max-md:px-4 `} />
+              <Button text={"Explore More"} p={"group-hover:text-black"} circ={"bg-white text-black"} customclass={`w-fit bg-[#ffffff3a] md:text-xs md:px-5 max-md:text-xs max-md:px-4 `} />
             </div>
           </div>
         </motion.div>
@@ -41,7 +41,7 @@ const ShopLanding = ({ ShopLandingdata }) => {
         <h2 className="font-Secondary text-xl w-[50%] max-lg:text-sm max-xl:text-lg max-sm:w-[80%] text-center max-md:px-10">
           {ShopLandingdata.shopCompare}
         </h2>
-        <Button text={"Explore More "} p={"group-hover:text-black"} circ={"bg-white"} customclass={`w-fit bg-[#000] text-white md:text-xs md:px-5 max-md:text-xs max-md:px-4 `} />
+        <Button text={"Explore More "} p={"group-hover:text-black "} circ={"bg-white "} customclass={`w-fit bg-[#FFC356] border-2 text-white md:text-xs md:px-5 max-md:text-xs max-md:px-4 `} />
       </div>
     </div>
   );

@@ -35,14 +35,14 @@ const HomePagePoduct = () => {
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 font-['satoshi']">
           Where Innovation Meets Luxury
         </h1>
-        <p className="max-w-2xl leading-6 text-lg sm:text-xl lg:text-2xl text-gray-700 mb-8 font-Secondary">
+        <p className="font-Secondary w-[50%] max-xs:w-[90%] max-md:text-[1.2rem] max-md:leading-[1.5rem] max-sm:w-[80%] max-md:w-[80%] text-[1.5rem] max-sm:text-[.9rem] leading-[1.8rem] max-sm:leading-[1.2rem] max-lg:text-[1.3rem] max-xl:w-[80%]">
           Experience the pinnacle of sound and design with Bang & Olufsen. Our
           ethos is rooted in delivering unmatched craftsmanship, exceptional
           sound quality, and timeless design.
         </p>
-        <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <div className="flex items-center mt-10 gap-2 ">
         <Button text={'Explore Products'} customclass={`text-white bg-[#FFC356]`} circ={'bg-[#dadada]'}/>
-          <Button text={'Learn More'} customclass={`text-black bg-[#dadada]`} circ={'bg-[#000]'} p={`group-hover:text-white`}/>
+          <Button text={'Learn More'} customclass={`text-black  bg-[#dadada]`} circ={'bg-[#000]'} p={`group-hover:text-white`}/>
         </div>
       </div>
       <div className="w-full flex flex-col gap-2 bg-[#fff]">

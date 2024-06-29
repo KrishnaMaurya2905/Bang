@@ -31,8 +31,7 @@ const ShowProduct = React.memo(({ setopenProduct, openProduct, showproductdata }
         <h2 className="font-primary pt-2 uppercase">{showproductdata.title}</h2>
         <h4 className="text-2xl pt-1 font-Secondary">{showproductdata.des}</h4>
         <h5 className="text-sm font-primary pb-3">{showproductdata.price}</h5>
-
-        <Button text={"Experience in Store"} customclass={`w-fit bg-[#000] text-white md:text-xs md:px-5 max-md:text-xs max-md:px-4 `} circ={"bg-white "}  p={"group-hover:text-black"} />
+        <Button text={"Experience in Store"} customclass={`w-fit bg-[#FFC356] border-2 border-zinc-300 text-white md:text-xs md:px-5 max-md:text-xs max-md:px-4 `} circ={"bg-white "}  p={"group-hover:text-black"} />
       </div>
     </div>
   );  

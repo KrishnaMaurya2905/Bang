@@ -16,14 +16,14 @@ const InteractiveImage = () => {
     small:
       "https://res.cloudinary.com/dtkyjnbvf/image/upload/q_auto,f_auto/landingpage-phone_wgttc2.jpg",
     medium:
-      "https://res.cloudinary.com/dtkyjnbvf/image/upload/q_auto,f_auto/landingpage-tablet.jpg",
+      "https://res.cloudinary.com/dtkyjnbvf/image/upload/v1719662595/Clot-A1-Digital-0002-SoMe-Crop_zmavkc.png",
     large:
       "https://res.cloudinary.com/dtkyjnbvf/image/upload/q_auto,f_auto/Mosaic_land_clot_1_idqfq6.png",
   };
 
   const getBreakpoint = () => {
     const width = window.innerWidth;
-    if (width < 768) {
+    if (width < 500) {
       return "small";
     } else if (width < 1024) {
       return "medium";
@@ -135,12 +135,14 @@ const InteractiveImage = () => {
     };
 
     const getFOV = (width) => {
-      if (width < 768) {
-        return 115;
-      } else if (width < 1024) {
-        return 60;
+      if (width < 450) {
+        return 100;
+      } else if (width < 650) {
+        return 95;
+      } else if (width < 800) {
+        return 90;
       } else {
-        return 55;
+        return 65;
       }
     };
 
@@ -236,7 +238,7 @@ const InteractiveImage = () => {
     };
 
     const handleMouseLeave = () => {
-      easeFactor.current = 0.05;
+      easeFactor.current = 0.02;
       targetMousePosition.current = { ...prevPosition.current };
     };
 
@@ -279,21 +281,21 @@ const InteractiveImage = () => {
     };
   }, [imageSrc]);
   const landingh1Ref = useRef();
-  const landingh1Ref2 = useRef()
-  useEffect(() => {
-    const splitText = new SplitTextJS(landingh1Ref.current);
-    const splitText2 = new SplitTextJS(landingh1Ref2.current);
-    gsap.from(splitText.chars, {
-      yPercent: 100,
-      stagger:0.012,
+  const landingh1Ref2 = useRef();
+  // useEffect(() => {
+  //   const splitText = new SplitTextJS(landingh1Ref.current);
+  //   const splitText2 = new SplitTextJS(landingh1Ref2.current);
+  //   gsap.from(splitText.chars, {
+  //     yPercent: 100,
+  //     stagger:0.012,
 
-    });
-    gsap.from(splitText2.chars, {
-      yPercent: 100,
-      stagger:0.012,
-      
-    });
-  },[]);
+  //   });
+  //   gsap.from(splitText2.chars, {
+  //     yPercent: 100,
+  //     stagger:0.012,
+
+  //   });
+  // },[]);
   return (
     <div
       id="imageContainer"
@@ -305,8 +307,8 @@ const InteractiveImage = () => {
         position: "relative",
       }}
     >
-      <div className="absolute w-full flex max-sm:mt-[-10vh] flex-col items-center justify-center top-0 left-0 z-[99] overflow-hidden">
-        <h1
+      <div className="absolute w-full flex flex-col items-center justify-center top-0 left-0 z-[99] overflow-hidden max-md:bg-[url(https://res.cloudinary.com/dtkyjnbvf/image/upload/q_auto,f_auto/landingpage-phone_wgttc2.jpg)] bg-cover">
+        {/* <h1
           ref={landingh1Ref}
           className=" text-[6rem] h-fit w-fit overflow-hidden max-sm:text-[6vw] text-center  text-white font-Decorative uppercase leading-none"
         >
@@ -324,7 +326,7 @@ const InteractiveImage = () => {
           text={"Explore More"}
           p={"group-hover:text-[#000]"}
           circ={"bg-white"}
-        />
+        /> */}
       </div>
     </div>
   );

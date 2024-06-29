@@ -13,7 +13,6 @@ const Home = () => {
   return (
     <div ref={scrollRef} data-scroll-container>
         <LandingPage />
-
         <HomePagePoduct />
         <HomePageVideo />
         <Wbo />

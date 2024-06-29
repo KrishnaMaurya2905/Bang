@@ -51,22 +51,22 @@ const HistoryPage = () => {
     },
   ];
   return (
-    <div className="w-full h-fit bg-white flex flex-col  items-center overflow-hidden  justify-between gap-20 py-10 ">
+    <div className="w-full h-fit bg-white flex flex-col  items-center overflow-hidden  justify-between gap-10 pb-20">
       <TextAnimation
         text={"THE HISTORY OF BANG & OLUFSEN"}
-        textSize={"text-[3rem] max-sm:text-[10vw]"}
-        className={"pt-10 font-Secondary"}
+        textSize={"text-[3rem] max-xs:text-[1.2rem]  max-sm:text-[1.6rem]"}
+        className={"pt-20 text-center font-['satoshi']"}
       />
       <BorderAnimation/>
-      <div className="w-full h-fit gap-[10vh] max-sm:gap-10 sm:mt-[10vh] flex flex-col px-10 max-xl:px-5">
+      <div className="w-full h-fit gap-[10vh] max-sm:gap-10 sm:mt-[10vh]  flex flex-col px-10 max-xl:px-5">
         {History.map((item, index) => (
           <div
             key={index}
-            className={`w-[100%] h-[50vh] max-xl:h-[80vh]  ${
+            className={`w-[100%] h-[50vh] max-xl:h-[60vh] max-sm:h-[80vh] max-md:h-screen  ${
               index === 1 ? "flex-row-reverse  md:text-end" : ""
-            }  flex max-xl:flex-col gap-10 justify-between`}
+            }  flex max-md:flex-col gap-10 justify-between`}
           >
-            <div className="h-full w-[40%] max-xl:w-full">
+            <div className="h-full w-[40%] max-xl:w-[55%] max-xl:h-[60%] max-md:w-full">
               <div
                 className={`flex flex-col justify-between max-sm:py-5 w-full h-full`}
               >
@@ -82,13 +82,13 @@ const HistoryPage = () => {
                 </div>
                 <Paragraph
                   phrases={item.paragraph}
-                  className={`text-[1.8rem] opacity-75 leading-[2rem] font-Secondary font-[200]  max-sm:text-[.98rem]  max-sm:leading-[1.5rem] max-md:text-[1.5rem] max-md:leading-[1.8rem] max-xs:text-[.85rem] max-xs:leading-[1.2rem]`}
+                  className={`text-[1.5rem] max-2xl:text-[1.2rem] max-xl:text-[1rem]  max-xs:text-[.80rem] font-Secondary`}
                 />
               </div>
             </div>
-            <div className="h-full w-[35%] max-xl:w-full overflow-hidden">
+            <div className="h-full w-[35%]  max-xl:w-[45%] max-xl:h-[60%] max-md:w-full bg-[#ECEAE8] overflow-hidden">
               <img
-                className={`w-full h-full object-cover ${
+                className={`w-full h-full max-md:object-contain object-cover ${
                   index === 1 ? "object-center" : ""
                 }`}
                 src={item.imgsrc}
