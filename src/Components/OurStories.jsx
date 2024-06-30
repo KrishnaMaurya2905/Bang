@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
-import TextAnimation from "./TextAnimation";
 
 const OurStories = () => {
   const containerRef = useRef(null);

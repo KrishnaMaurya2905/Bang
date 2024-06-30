@@ -3,7 +3,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Footer from "../Components/Footer";
 import ShopLanding from "../Components/ShopLanding";
-import BorderAnimation from "../Components/BorderAnimation"
+
 const Worldbando = () => {
   const ShopLandingdata = {
     Img: "https://res.cloudinary.com/dtkyjnbvf/image/upload/v1719490878/Lifestyle_-_Sounds_Like_Home_-_Malene_and_Nikolaj_-_BOHOLIDAYS_09357_-_1000x1000px_afkdnr.webp",
