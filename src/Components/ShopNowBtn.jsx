@@ -42,7 +42,7 @@ const ShopNowBtn = React.memo(({ text , arrow }) => {
   }, [contextSafe]);
 
   return (
-    <div className="button relative overflow-hidden">
+    <div className="button w-fit relative overflow-hidden">
       <div className="h-[1.5rem] text-[1rem] max-sm:text-[.9rem] overflow-hidden">
         <h1 ref={h1Ref1} className={`flex items-center gap-2 max-sm:gap-1`}>
           {text ? text : "Shop Now "} {arrow === "false" ? "" : <MdArrowOutward />}

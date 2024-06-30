@@ -140,7 +140,7 @@ const InteractiveImage = () => {
       } else if (width < 850) {
         return 80;
       } else if (width < 1200) {
-        return 65;
+        return 80;
       } else {
         return 55;
       }
