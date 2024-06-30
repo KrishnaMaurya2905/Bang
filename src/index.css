@@ -13,14 +13,6 @@
 }
 
 @font-face {
-  font-family: "Intro";
-  src: url("src/assets/Fonts/Dense-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Sans";
-  src: url("/src/assets/Fonts/BespokeSans-Variable.ttf") format("truetype");
-}
-@font-face {
   font-family: "Melodrama";
   src: url("/src/assets/Fonts/Melodrama-Regular.woff") format("woff");
 }
@@ -51,11 +43,7 @@ canvas {
   mix-blend-mode: color;
 }
 
-@media (max-width: 640px) {
-  .canvas{
-    display: none;
-  }
-}
+
 
 #imageContainer > * {
   position: absolute;

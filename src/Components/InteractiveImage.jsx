@@ -133,7 +133,7 @@ const InteractiveImage = () => {
       window.addEventListener("resize", onWindowResize, false);
     };
     const getFOV = (width) => {
-      if (width < 450) {
+      if (width < 480) {
         return 100;
       } else if (width < 650) {
         return 105;
@@ -279,29 +279,6 @@ const InteractiveImage = () => {
       }
     };
   }, [imageSrc]);
-  const landingh1Ref = useRef();
-  const landingh1Ref2 = useRef();
-  useEffect(() => {
-    const splitText = new SplitTextJS(landingh1Ref.current);
-    const splitText2 = new SplitTextJS(landingh1Ref2.current);
-    gsap.from(splitText.chars, {
-      yPercent: 100,
-      stagger: 0.012,
-      delay:4.6
-    });
-    gsap.from(splitText2.chars, {
-      yPercent: 100,
-      stagger: 0.012,
-      delay:4.6,
-      onComplete:()=>{
-        gsap.to('.landing-content',{
-          opacity:1,
-          duration:.4,
-          stagger:.1
-        })
-      }
-    });
-  }, []);
   return (
     <div
       id="imageContainer"
@@ -313,28 +290,23 @@ const InteractiveImage = () => {
         position: "relative",
       }}
     >
-      <div className="absolute   w-full flex flex-col max-sm:mt-[-10vh] items-center justify-center top-0 left-0 z-[99] overflow-hidden max-md:bg-[url(/src/assets/images/Television/kmn.png)] bg-cover ">
-        <h1
-          ref={landingh1Ref}
-          className=" text-[6rem] h-fit w-fit overflow-hidden max-sm:text-[1.8rem] text-center  text-white font-Decorative uppercase leading-none max-xl:text-[4rem] max-lg:text-[3.5rem] max-2xl:text-[5rem]"
-        >
+      <div className="absolute  w-full flex flex-col max-sm:mt-[-10vh] items-center justify-center top-0 left-0 z-[99] overflow-hidden max-md:bg-[url()] bg-cover ">
+        <h1 className=" text-[6rem] h-fit w-fit overflow-hidden max-sm:text-[1.8rem] text-center  text-white font-Decorative uppercase leading-none max-xl:text-[4rem] max-lg:text-[3.5rem] max-2xl:text-[5rem]">
           Experience the Ultimate
         </h1>
-        <h1  ref={landingh1Ref2} className="  text-[6rem] h-fit  w-fit overflow-hidden max-sm:text-[1.8rem] text-center max-xl:text-[4rem]  text-white font-Decorative  uppercase leading-none max-lg:text-[3.5rem] max-2xl:text-[5rem] ">
+        <h1 className="  text-[6rem] h-fit  w-fit overflow-hidden max-sm:text-[1.8rem] text-center max-xl:text-[4rem]  text-white font-Decorative  uppercase leading-none max-lg:text-[3.5rem] max-2xl:text-[5rem] ">
           Audio Innovation and Design
         </h1>
-        <p className="text-md font-primary opacity-0 pb-5 landing-content text-[#fff] w-[30%] max-sm:text-sm max-sm:w-[80%] max-lg:w-[50%]  max-xl:w-[60%] text-center mt-5">
+        <p className="text-md font-primary  pb-5 landing-content text-[#fff] w-[30%] max-sm:text-sm max-sm:w-[80%] max-lg:w-[50%]  max-xl:w-[60%] text-center mt-5">
           Immerse yourself in unparalleled sound quality and sleek,
           sophisticated design with Bang & Olufsen – where every note is a
           masterpiece.
         </p>
-       <div className="landing-content opacity-0">
-       <Button
+        <Button
           text={"Explore More"}
           p={"group-hover:text-[#000]"}
           circ={"bg-white"}
         />
-       </div>
       </div>
     </div>
   );

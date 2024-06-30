@@ -55,7 +55,7 @@ const Footer = () => {
           <div className="w-full h-full text-white ">
             <div className="w-full h-[15%] flex justify-between font-primary items-center px-10 max-sm:pl-2 max-sm:pr-5">
               <Logo />
-              <ShopNowBtn text="Back to top" />
+              <a href="#top"><ShopNowBtn text="Back to top" /></a>
             </div>
             <div className="h-[75%] w-full items-start  px-10 max-sm:px-5 flex max-md:flex-col max-md:gap-5 max-sm:gap-0 justify-between">
               <div className="h-full font-primary max-md:w-full w-[45%] flex flex-col max-sm:gap-4 max-md:gap-5 gap-8">
