@@ -20,7 +20,6 @@ const InteractiveImage = () => {
     large:
       "https://res.cloudinary.com/dtkyjnbvf/image/upload/q_auto,f_auto/Mosaic_land_clot_1_idqfq6.png",
   };
-
   const getBreakpoint = () => {
     const width = window.innerWidth;
     if (width < 500) {
@@ -133,19 +132,19 @@ const InteractiveImage = () => {
 
       window.addEventListener("resize", onWindowResize, false);
     };
-
     const getFOV = (width) => {
       if (width < 450) {
         return 100;
       } else if (width < 650) {
-        return 95;
-      } else if (width < 800) {
-        return 90;
-      } else {
+        return 105;
+      } else if (width < 850) {
+        return 80;
+      } else if (width < 1200) {
         return 65;
+      } else {
+        return 55;
       }
     };
-
     const onWindowResize = () => {
       handleResize();
       if (camera && renderer) {
@@ -282,20 +281,20 @@ const InteractiveImage = () => {
   }, [imageSrc]);
   const landingh1Ref = useRef();
   const landingh1Ref2 = useRef();
-  // useEffect(() => {
-  //   const splitText = new SplitTextJS(landingh1Ref.current);
-  //   const splitText2 = new SplitTextJS(landingh1Ref2.current);
-  //   gsap.from(splitText.chars, {
-  //     yPercent: 100,
-  //     stagger:0.012,
-
-  //   });
-  //   gsap.from(splitText2.chars, {
-  //     yPercent: 100,
-  //     stagger:0.012,
-
-  //   });
-  // },[]);
+  useEffect(() => {
+    const splitText = new SplitTextJS(landingh1Ref.current);
+    const splitText2 = new SplitTextJS(landingh1Ref2.current);
+    gsap.from(splitText.chars, {
+      yPercent: 100,
+      stagger: 0.012,
+      delay:4.6
+    });
+    gsap.from(splitText2.chars, {
+      yPercent: 100,
+      stagger: 0.012,
+      delay:4.6
+    });
+  }, []);
   return (
     <div
       id="imageContainer"
@@ -307,17 +306,17 @@ const InteractiveImage = () => {
         position: "relative",
       }}
     >
-      <div className="absolute w-full flex flex-col items-center justify-center top-0 left-0 z-[99] overflow-hidden max-md:bg-[url(https://res.cloudinary.com/dtkyjnbvf/image/upload/q_auto,f_auto/landingpage-phone_wgttc2.jpg)] bg-cover">
-        {/* <h1
+      <div className="absolute w-full flex flex-col max-sm:mt-[-10vh] items-center justify-center top-0 left-0 z-[99] overflow-hidden max-md:bg-[url(/src/assets/images/Television/kmn.png)] bg-cover ">
+        <h1
           ref={landingh1Ref}
-          className=" text-[6rem] h-fit w-fit overflow-hidden max-sm:text-[6vw] text-center  text-white font-Decorative uppercase leading-none"
+          className=" text-[6rem] h-fit w-fit overflow-hidden max-sm:text-[1.8rem] text-center  text-white font-Decorative uppercase leading-none max-xl:text-[4rem] max-lg:text-[3.5rem] max-2xl:text-[5rem]"
         >
           Experience the Ultimate
         </h1>
-        <h1  ref={landingh1Ref2} className="landing-text text-[6rem] h-fit  w-fit overflow-hidden max-sm:text-[6vw] text-center  text-white font-Decorative  uppercase leading-none">
+        <h1  ref={landingh1Ref2} className="landing-text text-[6rem] h-fit  w-fit overflow-hidden max-sm:text-[2rem] text-center max-xl:text-[4rem]  text-white font-Decorative  uppercase leading-none max-lg:text-[3.5rem] max-2xl:text-[5rem] ">
           Audio Innovation and Design
         </h1>
-        <p className="text-md font-primary pb-5 text-[#fff] w-[30%] max-sm:text-sm max-sm:w-[80%] text-center mt-5">
+        <p className="text-md font-primary pb-5 text-[#fff] w-[30%] max-sm:text-sm max-sm:w-[80%] max-lg:w-[50%]  max-xl:w-[60%] text-center mt-5">
           Immerse yourself in unparalleled sound quality and sleek,
           sophisticated design with Bang & Olufsen – where every note is a
           masterpiece.
@@ -326,7 +325,7 @@ const InteractiveImage = () => {
           text={"Explore More"}
           p={"group-hover:text-[#000]"}
           circ={"bg-white"}
-        /> */}
+        />
       </div>
     </div>
   );

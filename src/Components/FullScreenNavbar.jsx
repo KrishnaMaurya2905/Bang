@@ -100,7 +100,7 @@ const FullScreenNavbar = React.memo(
               <NavLink
                 to={item.path}
                 className={(e) =>
-                  e.isActive ? "text-[#fff]" : "p-1 w-fit  cursor-pointer"
+                  e.isActive ? "text-[#FFC356] " : " p-1 w-fit  cursor-pointer"
                 }
                 key={index}
               >

@@ -29,7 +29,7 @@ export default function Wbo() {
     <div className="bg-white h-[150vh] max-md:h-[110vh] w-full overflow-hidden">
       <TextAnimation
         text={"Explore the World of B & O"}
-        className={`text-[3.5rem] max-md:text-[1.8rem] pt-[10vh] font-['satoshi'] uppercase`}
+        className={`text-[3.5rem] max-md:text-[1.8rem] pt-[10vh] max-sm:text-[1.5rem] font-['satoshi'] uppercase`}
       />
       <div
         ref={container}

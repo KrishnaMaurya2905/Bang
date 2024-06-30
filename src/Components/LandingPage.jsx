@@ -13,7 +13,7 @@ const LandingPage = () => {
   const y = useTransform(scrollYProgress, [0, 1], ["0vh", "300vh"]);
 
   return (
-    <div className=" overflow-hidden">
+    <div className="max-sm:h-[90vh] overflow-hidden">
       <motion.div style={{ y }} className="relative h-full w-full">
         <InteractiveImage />
       </motion.div>

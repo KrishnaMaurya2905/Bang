@@ -157,26 +157,26 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navcontainer max-2xl:px-5 w-full px-20 h-[8vh] mix-blend-difference text-white fixed flex justify-between items-center z-[99] top-0">
-      <Link to="/" className="logo-container w-[10rem] overflow-hidden">
+    <div className="navcontainer max-2xl:px-5 w-full px-20 h-[8vh]  text-white fixed flex justify-between items-center z-[99] top-0 ">
+      <Link to="/" className="logo-container  w-[10rem]  overflow-hidden">
         <Logo/>
       </Link>
       <div
         className={`flex ${
           openNav ? "opacity-5" : "opacity-100"
-        } text-sm items-center max-lg:hidden gap-[3vw]`}
+        } text-sm items-center  max-lg:hidden gap-[3vw]`}
       >
         {Navbardata.map((item, index) => (
           <div
             key={index}
-            className="p-1 w-fit font-primary cursor-pointer"
+            className="p-1 w-fit  font-primary cursor-pointer"
             onClick={() => handleButtonClick(item)}
           >
             <NavLinkAnimation text={item.title} />
           </div>
         ))}
       </div>
-      <div className="menu-button-container lg:hidden">
+      <div className="menu-button-container lg:hidden ">
         <HiMenuAlt4
           onClick={() => {
             setOpenNav((prev) => !prev);

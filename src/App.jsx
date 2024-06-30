@@ -117,7 +117,7 @@ const App = () => {
     const scroll = new LocomotiveScroll({
       el: document.querySelector("[data-scroll-container]"),
       smooth: true,
-      lerp: 0.1, // Adjust lerp value if needed
+      lerp: 0.01, 
     });
 
     return () => {
@@ -142,7 +142,7 @@ const App = () => {
 
   return (
     <div className="relative bg-white" data-scroll-container>
-      {/* <Preloader /> */}
+      <Preloader />
       <Navbar location={location} key={location.pathname} />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>

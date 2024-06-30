@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { MdArrowOutward } from "react-icons/md";
 
-const ShopNowBtn = React.memo(({ text }) => {
+const ShopNowBtn = React.memo(({ text , arrow }) => {
   const { contextSafe } = useGSAP();
   const h1Ref1 = useRef(null);
   const h1Ref2 = useRef(null);
@@ -45,10 +45,10 @@ const ShopNowBtn = React.memo(({ text }) => {
     <div className="button relative overflow-hidden">
       <div className="h-[1.5rem] text-[1rem] max-sm:text-[.9rem] overflow-hidden">
         <h1 ref={h1Ref1} className={`flex items-center gap-2 max-sm:gap-1`}>
-          {text ? text : "Shop Now "} <MdArrowOutward />
+          {text ? text : "Shop Now "} {arrow === "false" ? "" : <MdArrowOutward />}
         </h1>
         <h1 ref={h1Ref2} className={`flex items-center gap-2 max-sm:gap-1`}>
-          {text ? text : "Shop Now "} <MdArrowOutward />
+          {text ? text : "Shop Now "} {arrow === "false" ? "" : <MdArrowOutward />}
         </h1>
       </div>
       <div

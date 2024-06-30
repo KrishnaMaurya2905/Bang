@@ -54,7 +54,7 @@ const HistoryPage = () => {
     <div className="w-full h-fit bg-white flex flex-col  items-center overflow-hidden  justify-between gap-10 pb-20">
       <TextAnimation
         text={"THE HISTORY OF BANG & OLUFSEN"}
-        textSize={"text-[3rem] max-xs:text-[1.2rem]  max-sm:text-[1.6rem]"}
+        textSize={"text-[3rem] max-xs:text-[1.2rem]  max-sm:text-[1.4rem]"}
         className={"pt-20 text-center font-['satoshi']"}
       />
       <BorderAnimation/>
@@ -88,9 +88,7 @@ const HistoryPage = () => {
             </div>
             <div className="h-full w-[35%]  max-xl:w-[45%] max-xl:h-[60%] max-md:w-full bg-[#ECEAE8] overflow-hidden">
               <img
-                className={`w-full h-full max-md:object-contain object-cover ${
-                  index === 1 ? "object-center" : ""
-                }`}
+                className={`w-full h-full object-contain `}
                 src={item.imgsrc}
                 alt=""
               />
@@ -101,7 +99,7 @@ const HistoryPage = () => {
       <Button
         text={"View More"}
         customclass={` w-fit mx-auto mt-[10vh] max-sm:mt-0 bg-white border-[1px]`}
-        circ={`bg-black`}
+        circ={`bg-[#FFC356]`}
         p={`group-hover:text-white`}
       />
     </div>

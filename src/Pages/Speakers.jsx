@@ -25,7 +25,7 @@ const Speakers = () => {
     {
       title: "BEOSOUND A5",
       des: "Powerful portable speaker",
-      productImage: "https://res.cloudinary.com/dtkyjnbvf/image/upload/f_webp/v1719492388/1687680433-BeosoundA50001_mcrcus.jpg",
+      productImage: "https://res.cloudinary.com/dtkyjnbvf/image/upload/v1719491453/BEOSOUND_A5_p4tars.webp",
       price: "$1,499"
     }
     ,

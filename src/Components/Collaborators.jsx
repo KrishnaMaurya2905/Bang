@@ -72,11 +72,11 @@ const Collaborators = () => {
       <TextAnimation
         text={"WE CALL THEM PARTNERS"}
         textSize={"text-[4rem]"}
-        className={"font-['satoshi'] mb-[10vh] max-xs:text-[1.5rem] max-sm:text-[2rem]"}
+        className={"font-['satoshi'] mb-[10vh] max-md:text-[3rem] max-xs:text-[1.5rem] max-sm:text-[2rem]"}
       />
       <div
         ref={imgRef}
-        className="relative flex flex-wrap justify-center h-[120vh] w-full gap-5 overflow-hidden"
+        className="relative flex flex-wrap justify-center h-[120vh]  max w-full gap-5 overflow-hidden"
       >
         {data.map((item, index) => (
           <div
