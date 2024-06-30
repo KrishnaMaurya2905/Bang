@@ -48,18 +48,18 @@ const Footer = () => {
         />
       </div>
       <div
-        className="relative h-[70vh] max-md:h-[90vh] bg-black "
+        className="relative h-[70vh] max-md:h-[90vh] max-xs:h-[93vh]  bg-black "
         style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
       >
-        <div className="fixed bottom-0 h-[70vh] max-md:h-[90vh] w-full text-black">
-          <div className="w-full h-full text-white ">
-            <div className="w-full h-[15%] flex justify-between font-primary items-center px-10 max-sm:pl-2 max-sm:pr-5">
+        <div className="fixed bottom-0 h-[70vh] max-md:h-[90vh]  max-xs:h-screen w-full text-black ">
+          <div className="w-full h-full text-white  ">
+            <div className="w-full h-[15%] flex justify-between font-primary items-center px-10 max-sm:pl-2 max-xs:pt-10 max-sm:pr-5 max-xs:text-sm">
               <Logo />
               <a href="#top"><ShopNowBtn text="Back to top" /></a>
             </div>
             <div className="h-[75%] w-full items-start  px-10 max-sm:px-5 flex max-md:flex-col max-md:gap-5 max-sm:gap-0 justify-between">
               <div className="h-full font-primary max-md:w-full w-[45%] flex flex-col max-sm:gap-4 max-md:gap-5 gap-8">
-                <h1 className="text-5xl font-Decorative max-2xl:text-4xl font-[600]  ">
+                <h1 className="text-5xl font-Decorative max-2xl:text-4xl font-[600] ">
                   We would love to hear from you.
                 </h1>
                 <h2 className="text-xl max-sm:text-xs max-lg:text-base  opacity-[.7]">
@@ -104,9 +104,9 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-            <div className="h-[10%] w-full flex justify-between max-sm:text-xs font-primary px-10 max-sm:px-5 text-sm">
+            <div className="h-[10%] w-full flex justify-between max-xs:items-center max-xs:pb-3 max-sm:text-xs font-primary px-10 max-sm:px-5 text-sm">
               <h2 className="max-md:hidden">Privacy Policy</h2>
-              <h2>&copy; Bang & Olufsen 2024. All rights reserved.</h2>
+              <h2 className=" max-xs:flex flex-col">&copy; Bang & Olufsen 2024. <span>All rights reserved.</span></h2>
               <h2>Designed By The SPIR8s</h2>
             </div>
           </div>
