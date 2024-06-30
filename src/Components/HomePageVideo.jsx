@@ -42,9 +42,9 @@ const HomePageVideo = () => {
       <div className="text-container-video h-[15vh] w-full max-md:pb-5 flex items-center justify-center flex-col gap-3">
         <TextAnimation
           text={"Experience the joy in Motion"}
-          textSize={"text-[3rem] max-sm:text-2xl font-['satoshi'] uppercase max-lg:text-[2rem] max-xl:text-[2.5rem] "}
+          textSize={"text-[3rem] max-sm:text-2xl font-Decorative font-[800] opacity-[.7]  uppercase max-lg:text-[2rem] max-xl:text-[2.5rem] "}
         />
-        <TextAnimation text={"Beopoly Ex"} textSize={"text-[1.5rem] uppercase font-['satoshi'] max-sm:text-xl max-lg:text-[1rem]"} />
+        <TextAnimation text={"Beopoly Ex"} textSize={"text-[1.5rem] uppercase font-Decorative font-[800] opacity-[.7] max-sm:text-xl max-lg:text-[1rem]"} />
       </div>
       <div
         ref={container}

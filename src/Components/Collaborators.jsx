@@ -72,7 +72,7 @@ const Collaborators = () => {
       <TextAnimation
         text={"WE CALL THEM PARTNERS"}
         textSize={"text-[4rem]"}
-        className={"font-['satoshi'] mb-[10vh] max-md:text-[3rem] max-xs:text-[1.5rem] max-sm:text-[2rem]"}
+        className={"font-Decorative font-[800] opacity-[.7]  mb-[10vh] max-md:text-[3rem] max-xs:text-[1.5rem] max-sm:text-[2rem]"}
       />
       <div
         ref={imgRef}

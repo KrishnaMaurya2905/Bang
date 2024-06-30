@@ -7,9 +7,9 @@ import BorderAnimation from "../Components/BorderAnimation"
 const Worldbando = () => {
   const ShopLandingdata = {
     Img: "https://res.cloudinary.com/dtkyjnbvf/image/upload/v1719490878/Lifestyle_-_Sounds_Like_Home_-_Malene_and_Nikolaj_-_BOHOLIDAYS_09357_-_1000x1000px_afkdnr.webp",
-    Title: "Superior Sound On-the-Go",
-    Para: "Experience unparalleled audio quality with Bang & Olufsen headphones, designed for comfort and precision to elevate your listening pleasure wherever you are.",
-    shopQue: "Iconic quality since 1925",
+    Title: "The Art of Sound",
+    Para: "Explore Bang & Olufsen, where technology meets timeless design. This Danish brand offers iconic speakers, headphones, and TVs, blending performance and elegance.",
+    shopQue:"Iconic Quality Since 1925",
     shopCompare:
       "Since 1925 Bang & Olufsen has created iconic audio and home entertainment products to the highest standards of sound, craft and design.",
   };

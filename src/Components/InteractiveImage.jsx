@@ -313,7 +313,7 @@ const InteractiveImage = () => {
         >
           Experience the Ultimate
         </h1>
-        <h1  ref={landingh1Ref2} className="landing-text text-[6rem] h-fit  w-fit overflow-hidden max-sm:text-[2rem] text-center max-xl:text-[4rem]  text-white font-Decorative  uppercase leading-none max-lg:text-[3.5rem] max-2xl:text-[5rem] ">
+        <h1  ref={landingh1Ref2} className="landing-text text-[6rem] h-fit  w-fit overflow-hidden max-sm:text-[1.8rem] text-center max-xl:text-[4rem]  text-white font-Decorative  uppercase leading-none max-lg:text-[3.5rem] max-2xl:text-[5rem] ">
           Audio Innovation and Design
         </h1>
         <p className="text-md font-primary pb-5 text-[#fff] w-[30%] max-sm:text-sm max-sm:w-[80%] max-lg:w-[50%]  max-xl:w-[60%] text-center mt-5">

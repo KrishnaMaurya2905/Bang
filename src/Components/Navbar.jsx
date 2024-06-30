@@ -157,7 +157,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navcontainer max-2xl:px-5 w-full px-20 h-[8vh]  text-white fixed flex justify-between items-center z-[99] top-0 ">
+    <>
+    
+    
+    <div className="navcontainer max-2xl:px-5 w-full px-20 h-[8vh]  mix-blend-difference  text-white fixed flex justify-between items-center z-[9] top-0 ">
       <Link to="/" className="logo-container  w-[10rem]  overflow-hidden">
         <Logo/>
       </Link>
@@ -185,14 +188,16 @@ const Navbar = () => {
           className="text-xl"
         />
       </div>
-      <FullScreenNavbar
-        setOpenNav={setOpenNav}
-        openNav={openNav}
-        navLinkData={navLinkData}
-        Navbardata={Navbardata}
-        handleButtonClick={handleButtonClick}
-      />
+      
     </div>
+    <FullScreenNavbar
+    setOpenNav={setOpenNav}
+    openNav={openNav}
+    navLinkData={navLinkData}
+    Navbardata={Navbardata}
+    handleButtonClick={handleButtonClick}
+  />
+  </>
   );
 };
 

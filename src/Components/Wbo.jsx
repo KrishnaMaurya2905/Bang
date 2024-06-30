@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import TextAnimation from "./TextAnimation";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 const slider1 = [
   { img: "https://res.cloudinary.com/dtkyjnbvf/image/upload/v1719484214/WoB16_lzjnak.webp", title: "SPEAKERS TO SUIT YOUR SPACE" },
   { img: "https://res.cloudinary.com/dtkyjnbvf/image/upload/v1719484212/WoB13_dss780.webp", title: "Charles Leclerc x Bang & Olufsen" },
@@ -29,7 +30,7 @@ export default function Wbo() {
     <div className="bg-white h-[150vh] max-md:h-[110vh] w-full overflow-hidden">
       <TextAnimation
         text={"Explore the World of B & O"}
-        className={`text-[3.5rem] max-md:text-[1.8rem] pt-[10vh] max-sm:text-[1.5rem] font-['satoshi'] uppercase`}
+        className={`text-[3.5rem] max-md:text-[1.8rem] pt-[10vh] max-sm:text-[1.5rem] font-Decorative font-[800] opacity-[.7]  uppercase`}
       />
       <div
         ref={container}
@@ -84,12 +85,14 @@ export default function Wbo() {
           })}
         </motion.div>
       </div>
+      <Link to='/worldb&o' >
       <Button
         text={"View More"}
         customclass={` w-fit mx-auto mt-[10vh] max-sm:mt-[5vh] bg-white border-[1px]`}
         circ={`bg-black`}
         p={`group-hover:text-white`}
       />
+      </Link>
     </div>
   );
 }

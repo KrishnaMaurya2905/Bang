@@ -24,7 +24,7 @@ const FullScreenNavbar = React.memo(
 
     return (
       <div
-        className={`full-screenNavbar ${
+        className={`full-screenNavbar z-10 text-white ${
           openNav
             ? "w-[65%] max-xl:w-[100%] px-[5%] max-sm:px-[8%] "
             : "w-0"
@@ -74,7 +74,7 @@ const FullScreenNavbar = React.memo(
                 <NavLink
                   to={navLinkData?.path}
                   key={index}
-                  className={` text-[1.8rem] max-md:text-[1.5rem] font-primary`}
+                  className={` text-[1.8rem] max-md:text-[1.5rem] font-Secondary`}
                   onMouseEnter={() => {
                     setImageSrc(item.categoryImage);
                     setImageDescription(item.categoryDescription);

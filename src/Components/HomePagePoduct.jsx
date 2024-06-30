@@ -27,7 +27,7 @@ const HomePagePoduct = () => {
         route: "/speakers",
       },
     ],
-    [] // Dependency array is empty since data doesn't change
+    []
   );
   return (
     <>
@@ -41,7 +41,7 @@ const HomePagePoduct = () => {
           sound quality, and timeless design.
         </p>
         <div className="flex items-center mt-10 gap-2 ">
-        <Button text={'Explore Products'} customclass={`text-white bg-[#FFC356]`} circ={'bg-[#dadada]'}/>
+        <Button text={'Explore Products'} customclass={`text-white bg-[#FFC356]`} circ={'bg-[#000]'}/>
           <Button text={'Learn More'} customclass={`text-black  bg-[#dadada]`} circ={'bg-[#000]'} p={`group-hover:text-white`}/>
         </div>
       </div>

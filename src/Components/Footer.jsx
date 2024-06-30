@@ -34,7 +34,7 @@ const Footer = () => {
   return (
     <div>
       <div className="footer-main w-full h-[40vh] max-md:h-[30vh] flex flex-col gap-3 items-center justify-center bg-zinc-200">
-        <h3 className="max-sm:text-sm text-[2rem]  text-black font-primary">
+        <h3 className="max-sm:text-sm text-[2rem]  text-black font-['satoshi'] font-bold">
           EXPLORE THE HOUSE OF BANG & OLUFSEN
         </h3>
         <h2 className="font-Secondary text-[1.5rem] max-md:text-sm py-3 max-md:py-0 text-center text-black ">
@@ -91,7 +91,7 @@ const Footer = () => {
                     </h1>
                     <div className="flex font-primary flex-col gap-3">
                       {item.links.map((link, idx) => (
-                        <Link to={link.url}>
+                        <Link key={idx} to={link.url}>
                           <ShopNowBtn
                             key={idx}
                             arrow={"false"}
@@ -106,8 +106,8 @@ const Footer = () => {
             </div>
             <div className="h-[10%] w-full flex justify-between max-sm:text-xs font-primary px-10 max-sm:px-5 text-sm">
               <h2 className="max-md:hidden">Privacy Policy</h2>
-              <h2>&copy;2024. All rights reserved.</h2>
-              <h2>Designed By THE SPIR8s</h2>
+              <h2>&copy; Bang & Olufsen 2024. All rights reserved.</h2>
+              <h2>Designed By The SPIR8s</h2>
             </div>
           </div>
         </div>
