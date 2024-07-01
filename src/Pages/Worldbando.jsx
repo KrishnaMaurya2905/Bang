@@ -174,11 +174,11 @@ const WorldofBandO = () => {
       {WorldofBandOdata.map((item, index) => (
         <div
           key={index}
-          className={`row flex w-full h-full gap-[10%]  max-md:flex-col-reverse max-md:gap-5 ${
+          className={`row flex w-full h-full gap-[10%] max-xs:gap-10 max-md:flex-col-reverse max-md:gap-5 ${
             index % 2 === 1 ? "flex-row-reverse " : ""
           }`}
         >
-          <div className="col1 w-[50%] max-sm:w-[100%] h-fit">
+          <div className="col1 w-[50%] max-md:w-[100%] h-fit">
             <img
               className="w-full  max-sm:h-[45vh] max-h-[65vh] max-sm:w-full object-cover"
               src={item.Image}
@@ -188,15 +188,15 @@ const WorldofBandO = () => {
               {item.Title}
             </h1>
           </div>
-          <div className="col2 w-[50%] max-sm:h-[30vh] max-sm:w-full">
+          <div className="col2 w-[50%] max-sm:h-[35vh] max-md:w-full">
             <div className="w-full h-full  flex flex-col justify-center items-start gap-10 max-lg:gap-5">
               <p className="title font-['satoshi'] uppercase
-               py-1 h-fit overflow-hidden font-[600] opacity-[.8] max-sm:text-[1rem] text-3xl">
+               py-1 h-fit overflow-hidden font-[600] opacity-[.8] max-sm:text-[1rem] max-xs:text-[3.8vw]  text-3xl">
                 <span className="inline-block w-full h-full">
                   {item.Description}
                 </span>
               </p>
-              <p className="paragraph text-[1.5rem] font-Secondary h-fit overflow-hidden w-[80%] max-lg:text-base leading-tight">
+              <p className="paragraph text-[1.5rem] font-Secondary h-fit overflow-hidden w-[80%] max-sm:w-full  max-lg:text-base max-xs:text-[2vh]   leading-tight">
                 <span className="inline-block w-full h-full">{item.para}</span>
               </p>
             </div>

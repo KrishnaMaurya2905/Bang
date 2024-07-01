@@ -205,10 +205,10 @@ const Footer = () => {
                     key={index}
                     className="w-[30%] h-full flex flex-col gap-10 max-md:gap-5 items-center "
                   >
-                    <h1 className="text-xl max-sm:text-sm max-lg:text-base  uppercase font-Secondary">
+                    <h1 className="text-xl max-sm:text-sm max-lg:text-base   uppercase font-Secondary">
                       {item.Title}
                     </h1>
-                    <div className="flex font-primary flex-col gap-3">
+                    <div className="flex font-primary flex-col gap-3 max-xs:gap-[2px]">
                       {item.links.map((link, idx) => (
                         <Link key={idx} to={link.url}>
                           <ShopNowBtn
