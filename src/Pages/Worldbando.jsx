@@ -74,7 +74,7 @@ const WorldofBandO = () => {
         Image:
           "https://res.cloudinary.com/dtkyjnbvf/image/upload/f_webp/v1719484206/WoB7_gwv6pm.webp",
         Title: "AT MILIAN FERRARI FLAGSHIP STORE",
-        Description: "Celebrating the launch of the ferrari Collection",
+        Description: "Celebrating the launch of ferrari Collection",
         para: "Bang & Olufsen hosted a celebration event on Thursday, the 14th of December on the opening day for the new Flagship store on London’s prestigious New Bond Street. Offering an exclusive first look at the space which has been designed to cater to the needs of individual customers by offering an immersive and tailored shopping experience.  ",
       },
       {
@@ -127,9 +127,9 @@ const WorldofBandO = () => {
             scrub: 1.5,
           },
         });
-        tl.from(title, { y: 50, opacity: 0, duration: 1.5 }).from(
+        tl.from(title, { y: 50, opacity: 0, duration: 1.8 }).from(
           paragraph,
-          { y: 50, opacity: 0, duration: 1.5 },
+          { y: 50, opacity: 0, duration: 1. },
           "-=1"
         );
       });
@@ -174,7 +174,7 @@ const WorldofBandO = () => {
       {WorldofBandOdata.map((item, index) => (
         <div
           key={index}
-          className={`row flex w-full h-full  max-md:flex-col-reverse max-md:gap-5 ${
+          className={`row flex w-full h-full gap-[10%]  max-md:flex-col-reverse max-md:gap-5 ${
             index % 2 === 1 ? "flex-row-reverse " : ""
           }`}
         >
@@ -189,8 +189,9 @@ const WorldofBandO = () => {
             </h1>
           </div>
           <div className="col2 w-[50%] max-sm:h-[30vh] max-sm:w-full">
-            <div className="w-full h-full  flex flex-col justify-center max-md:items-start items-center gap-10 max-lg:gap-5">
-              <p className="title font-primary py-1 h-fit overflow-hidden max-lg:text-lg text-3xl">
+            <div className="w-full h-full  flex flex-col justify-center items-start gap-10 max-lg:gap-5">
+              <p className="title font-['satoshi'] uppercase
+               py-1 h-fit overflow-hidden font-[600] opacity-[.8] max-sm:text-[1rem] text-3xl">
                 <span className="inline-block w-full h-full">
                   {item.Description}
                 </span>

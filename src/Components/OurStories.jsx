@@ -28,11 +28,11 @@ const OurStories = () => {
     },
     {
       img: "https://res.cloudinary.com/dtkyjnbvf/image/upload/v1719484619/stories4_sdahfx.webp",
-      style: " left-[-20vw] top-[30vh] w-[35vw] h-[30vh] max-sm:left-[-28vw] max-sm:w-[40%] max-sm:left-[-27%] max-sm:top-[30vh] max-sm:h-[30vh]",
+      style: " left-[-20vw] top-[30vh] w-[35vw] h-[30vh] max-sm:left-[-28vw] max-sm:w-[41%] max-sm:left-[-26%] max-sm:top-[30vh] max-sm:h-[30vh]",
     },
     {
       img: "https://res.cloudinary.com/dtkyjnbvf/image/upload/v1719484619/stories5_y1zy9u.webp",
-      style: " top-[33vh] left-[12vw] w-[25vw] h-[25vh] max-sm:w-[52%] max-sm:left-[21%] max-sm:top-[30vh] max-sm:h-[30vh]",
+      style: " top-[33vh] left-[12vw]  w-[25vw] h-[25vh] max-sm:w-[52%] max-sm:left-[21%] max-sm:top-[30vh] max-sm:h-[30vh]",
     },
     {
       img: "https://res.cloudinary.com/dtkyjnbvf/image/upload/v1719484620/stories6_o8owvc.webp",
@@ -48,7 +48,7 @@ const OurStories = () => {
             <motion.div
               key={idx}
               style={{ scale }}
-              className="w-full h-full absolute top-0 flex items-center justify-center"
+              className={`w-full h-full absolute top-0 ${idx === 3 ? "pl-2" : ""} flex items-center justify-center`}
             >
               <div className={`relative ${item.style}`}>
                 <img

@@ -94,7 +94,6 @@
 
 // export default App;
 
-
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
@@ -117,7 +116,7 @@ const App = () => {
     const scroll = new LocomotiveScroll({
       el: document.querySelector("[data-scroll-container]"),
       smooth: true,
-      lerp: 0.01, 
+      lerp: 0.01,
     });
 
     return () => {
@@ -135,9 +134,8 @@ const App = () => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -201,3 +199,4 @@ const App = () => {
 };
 
 export default App;
+
